@@ -3,6 +3,7 @@
 :root {
     --accent: #DCA95A;
     --primary: #000;
+    --white:#fff;
 }
 
 
@@ -74,10 +75,6 @@ a {
     text-decoration: none;
 }
 
-a:active {
-    color: var(--accent);
-}
-
 a:hover {
     text-decoration: none;
     color: var(--accent);
@@ -120,39 +117,46 @@ a:hover {
 
 }
 
-.menu2 a img {
+.menu2 label img {
     margin-top: -40px;
     opacity: 0;
     transform: translateX(0px);
     transition: ease
 }
 
-.menu2 a:nth-child(1):hover img {
+.menu2 label:nth-child(1):hover img {
     margin-top: -40px;
     opacity: 1;
     transform: translateX(30px);
     transition: ease .3s;
 }
 
-.menu2 a:hover img {
+.menu2 label:hover img {
     margin-top: -40px;
     opacity: 1;
-    transform: translateX(45px);
+    transform: translateX(40px);
     transition: ease .3s;
 }
 
+#radio{
+    display: none;
+}
 
 .b {
     display: block;
     margin-top: 4em;
     transition: ease .3s;
+    padding: 5px 15px 5px 11px;
 }
 
 .b:hover {
     display: block;
+    background-color: var(--accent);
     margin-top: 4em;
-    color: var(--accent);
+    color: var(--white);
     transition: ease .3s;
+    z-index: -5;
+    padding: 5px 15px 5px 11px;
 }
 
 .bleh form input {

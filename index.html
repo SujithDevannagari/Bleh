@@ -86,13 +86,18 @@ box-shadow: 10px 10px 0px 2px rgba(220,169,90,1);" />
         </div>
         <div class="row">
             <div class=" menu2">
-                <a class="b" href="#">UX & UI DESIGN <span><img src="Images/Arrowleft.svg" alt="arrow"></span></a>
-                <a class="b" class="m" href="#">Branding Design<span><img src="Images/Arrowleft.svg"
-                            alt="arrow"></span></a>
-                <a class="b" href="#">Art & 3D Design<span><img src="Images/Arrowleft.svg" alt="arrow"></span></a>
+                <label class="b">UX & UI DESIGN<span><img  src="Images/Arrowleft.svg" alt="arrow"></span>
+                    <input type="radio" name="radio" id="radio" checked="checked" onclick="go('grid.html')">
+                </label>
+                <label class="b">Branding Design<span><img  src="Images/Arrowleft.svg" alt="arrow"></span>
+                    <input type="radio" name="radio" id="radio" onclick="go('grid1.html')">
+                </label>
+                <label class="b">Art & 3D Design<span><img  src="Images/Arrowleft.svg" alt="arrow"></span>
+                    <input type="radio" name="radio" id="radio" onclick="go('grid2.html')">
+                </label>
             </div>
             <div>
-                <iframe src="grid.html"></iframe>
+                <iframe id="iFr" src="grid.html"></iframe>
             </div>
 
         </div>

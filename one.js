@@ -12,3 +12,18 @@ function myFunction() {
 }
 
 
+function go(loc) {
+  document.getElementById('iFr').src = loc;
+}
+
+function clickSingleA(b)
+{
+    items = document.querySelectorAll('.single.active');
+
+    if(items.length) 
+    {
+        items[0].className = 'single';
+    }
+
+    b.className = 'single active';
+}
