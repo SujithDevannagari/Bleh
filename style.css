@@ -177,7 +177,7 @@ a:hover {
 
 .one {
     grid-area: one;
-    background-image: url("images/FAft copy.png");
+    background-image: url("Images/FAft copy.png");
 }
 
 .two {
@@ -190,7 +190,7 @@ a:hover {
 
 .four {
     grid-area: four;
-    background-image: url("images/Gendfeature.png");
+    background-image: url("Images/Gendfeature.png");
 }
 
 .five {
