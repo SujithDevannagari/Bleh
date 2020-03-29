@@ -2,8 +2,9 @@
 
 :root {
     --accent: #DCA95A;
-    --primary: #000;
+    --primary: #353535;
     --white: #fff;
+    --darkgrey:#cfcfcf;
 }
 
 
@@ -62,7 +63,7 @@ body {
     font-family: 'Gentium Book Basic', serif;
     color: var(--primary);
     font-weight: 200;
-    font-size: 1em;
+    font-size: 1.2em;
     line-height: 180%;
 }
 
@@ -70,7 +71,7 @@ body {
     font-size: 2.3em;
     text-decoration: none;
     font-weight: 100;
-    color: darkgray;
+    color: var(--darkgrey);
     padding-left: 40px;
 }
 
@@ -79,13 +80,13 @@ body {
     text-decoration: none;
     font-weight: 100;
     color: var(--primary);
-    margin-top: 30%;
+    margin-top: 15%;
     letter-spacing:.5px;
 }
 
 
 a {
-    color: darkgray;
+    color: var(--darkgrey);
     text-decoration: none;
 }
 
@@ -132,6 +133,7 @@ a:hover {
     width: 66.5%;
     position: fixed;
     top: 0;
+    z-index:999;
 }
 
 .menu2 {
@@ -153,15 +155,15 @@ a:hover {
 .menu2 label:nth-child(1):hover img {
     margin-top: -40px;
     opacity: 1;
-    transform: translateX(30px);
-    transition: ease .3s;
+    transform: translateX(20px);
+    transition: ease .2s;
 }
 
 .menu2 label:hover img {
     margin-top: -40px;
     opacity: 1;
-    transform: translateX(40px);
-    transition: ease .3s;
+    transform: translateX(30px);
+    transition: ease .2s;
 }
 
 #radio {
@@ -171,7 +173,7 @@ a:hover {
 .b {
     display: block;
     margin-top: 4em;
-    transition: ease .3s;
+    transition: ease .2s;
     padding: 5px 15px 5px 11px;
 }
 
@@ -180,7 +182,7 @@ a:hover {
     background-color: var(--accent);
     margin-top: 4em;
     color: var(--white);
-    transition: ease .3s;
+    transition: ease .2s;
     z-index: -5;
     padding: 5px 15px 5px 11px;
 }
@@ -268,7 +270,7 @@ p {
 .con {
     text-align: center;
     padding-top: 15%;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
 }
 
 .last {
@@ -294,12 +296,12 @@ p {
 }
 .last1 div a img{
     transform: scale(1);
- transition: cubic-bezier(0.165, 0.84, 0.44, 1) .3s;
+ transition: cubic-bezier(0.165, 0.84, 0.44, 1) .2s;
  filter: brightness(1);   
 }
 .last1 div a:hover img {
  transform: scale(1.1);
- transition: cubic-bezier(0.165, 0.84, 0.44, 1) .3s;
+ transition: cubic-bezier(0.165, 0.84, 0.44, 1) .2s;
  filter: brightness(0);
 }
 
@@ -315,6 +317,28 @@ p {
     transition: ease-in-out .2s;
 }
 
+
+.sl a{
+    margin-top: 10%;
+    font-size: 1.3em;
+    font-weight: 100;
+    color: var(--primary) !important;
+    text-align: center;
+    padding: 0px 45px;
+    transition: ease-in-out .2s;
+}
+.sl a:hover{
+    margin-top: 10%;
+    font-size: 1.3em;
+    font-weight: 100;
+    color: var(--accent) !important;
+    text-align: center;
+    padding: 0px 45px;
+    transition: ease-in-out .2s;
+}
+
+
+
 input {
     outline: none;
     padding: 5px;
@@ -324,7 +348,7 @@ input {
     border-bottom: 1.2px solid grey;
     background-color: white;
     width: 55%;
-    transition: ease .3s;
+    transition: ease .2s;
 }
 
 textarea {
@@ -336,7 +360,7 @@ textarea {
     border-bottom: 1.2px solid grey;
     background-color: white;
     width: 55%;
-    transition: ease .3s;
+    transition: ease .2s;
     height: 150px;
 }
 
@@ -348,7 +372,7 @@ input:hover {
     border-bottom: 1.2px solid #DCA95A;
     background-color: white;
     min-width: 55%;
-    transition: ease .3s;
+    transition: ease .2s;
 }
 
 textarea:hover {
@@ -359,7 +383,7 @@ textarea:hover {
     border-bottom: 1.2px solid #DCA95A;
     background-color: white;
     min-width: 55%;
-    transition: ease .3s;
+    transition: ease .2s;
 
 }
 
@@ -370,7 +394,7 @@ button {
     margin-top: 30px;
     font-size: 1em;
     padding: 10px 55px;
-    transition: ease-in-out .3s;
+    transition: ease-in-out .2s;
 }
 
 button:hover {
@@ -379,8 +403,11 @@ button:hover {
     margin-top: 30px;
     font-size: 1em;
     padding: 10px 55px;
-    transition: ease-in-out .3s;
+    transition: ease-in-out .2s;
     color: var(--primary);
+}
+.first{
+    margin:7% 0% 0% 0%;
 }
 
 
@@ -413,3 +440,46 @@ button:hover {
 
 }
  }
+
+
+ @media screen and (max-width:1366px){
+    .first{
+        margin:7% 0% 0% 0%;
+    }
+   .sticky{
+       
+    width: 81.3%;
+position: fixed;
+top: 0;
+z-index: 999;
+}
+.menu2{
+    margin-top: 0%;
+}
+iframe{
+    margin-top: 10%;
+    width: 54em;
+}
+.con {
+    text-align: center;
+    padding-top: 10%;
+    margin-bottom: 3%;
+}
+
+.last1 {
+    margin-top: 5%;
+}
+
+.last1:hover {
+    margin-top: 5%;
+    color: var(--accent);
+    font-size: 2em;
+    font-weight: 100;
+    text-align: center;
+    padding: 0px 45px;
+    transition: ease-in-out .2s;
+}
+.grid-container {
+    margin-top: 8%;
+}
+ };

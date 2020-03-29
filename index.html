@@ -10,14 +10,14 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
     <title>Hello, Peeps!</title>
 </head>
 
 <body>
     <section class="container cont top-cont ">
         <div class="row" style="width:auto; height:100%;">
-            <section style="margin:12% 0% 0 0%" class="col-md-6 col-lg-6 col-sm-4">
+            <section class="col-md-6 col-lg-6 col-sm-6 first">
                 <img src="Images/Logo.svg" width="75px">
                 <h3 class="cth" style="    margin-top: 5vh;">
                     Hi I'm Sujith Devanagari,
@@ -35,7 +35,7 @@
                 </div>
 
             </section>
-            <section class="col-md-6 col-lg-6 col-sm-4" style=" margin: 12% 0 0 0; width: 500px; height: 600px">
+            <section class="col-md-6 col-lg-6 col-sm-4 first" style="width: 500px; height: 600px">
                 <img class="js-vhs-filter" src="Images/mypic.png" width="500px" height="600px" style="-webkit-box-shadow: 10px 10px 0px 2px rgba(220,169,90,1);
 -moz-box-shadow: 10px 10px 0px 2px rgba(220,169,90,1);
 box-shadow: 10px 10px 0px 2px rgba(220,169,90,1);" />
@@ -45,7 +45,7 @@ box-shadow: 10px 10px 0px 2px rgba(220,169,90,1);" />
 
     <section id="work" class="container cont ">
         <div class="row header" id="myHeader">
-            <nav class="navi">
+            <nav class="navi col-lg12">
                 <a href="#">
                     <img src="Images/Logoname.svg" alt="SD">
                     <!-- <span >Sujith<br>Devanagari</span> -->
@@ -70,7 +70,7 @@ box-shadow: 10px 10px 0px 2px rgba(220,169,90,1);" />
 
         </div>
         <div class="row">
-            <div class=" menu2">
+            <div class=" col-lg-2 col-md-2 col-sm-2 menu2">
                 <label class="b">UX & UI DESIGN<span><img  src="Images/Arrowleft.svg" alt="arrow"></span>
                     <input type="radio" name="radio" id="radio" checked="checked" onclick="go('grid.html')">
                 </label>
@@ -81,7 +81,7 @@ box-shadow: 10px 10px 0px 2px rgba(220,169,90,1);" />
                     <input type="radio" name="radio" id="radio" onclick="go('grid2.html')">
                 </label>
             </div>
-            <div>
+            <div class="col-lg-10 col-md-10 col-sm-10">
                 <iframe id="iFr" src="grid.html"></iframe>
             </div>
 
@@ -91,32 +91,33 @@ box-shadow: 10px 10px 0px 2px rgba(220,169,90,1);" />
     </section>
     <section class="container">
         <div id="photography" class="row">
-            <div class="grid-container">
-                <a href="https://unsplash.com/@sujithdevanagari" target="blank" class="one"></a>
+            <div class="grid-container col-md-12 col-lg-12 col-sm-12">
+                <a data-toggle="lightbox" data-gallery="example-gallery" href="https://images.unsplash.com/photo-1549734069-22bf5da1f158?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1978&q=80" class="one"></a>
                 <div class="two"></div>
                 <div class="three"></div>
                 <div class="four"></div>
                 <div class="five"></div>
                 <div class="six"></div>
             </div>
-            <div style="margin-top:2%;"><a style=" letter-spacing:.3px; font-size: 1em; font-weight: 200;" href="">View more on Unsplash</a> </div>
+            <div style="margin-top:2%;"><a style=" letter-spacing:.3px; font-size: 1em; font-weight: 200;" href="https://www.unsplash.com/@sujithdevanagari" target="blank">View more on Unsplash</a> </div>
         </div>
     </section>
     <section id="contact" class="container">
-        <div class="con">
+        <div class="con col-lg-12 col-md-12">
             <div class="last"> Looking for a Freelance Designer?</div><br>
             
-            <div class="last1" style="margin-top:10%; line-height: 280%;">
+            <div class="last1" style="line-height: 280%;">
                 <div><a href="mailto:sujith.d91@gmail.com?Subject=Freelance%20Enquiry" target="blank"><img src="Images/email.svg" alt="" width="40px"> Email Me</a></div>
             <div><a href="https://t.me/SujithDesign" target="blank"><img src="Images/Telegram.svg" alt="" width="40px"> Let's Chat on Telegram</a></div>
         </div>
             <div style="margin-top:20%">
-                <span class="last1"> <a href="#"> Hi on Instagram </a></span>
-                <span class="last1"> <a href="#"> Follow on Behance</a></span>
-                <span class="last1"> <a href="#">Love in Unsplash</a></span>
+                <span class="sl"> <a href="https://www.instagram.com/the_design_book/"> Hi on Instagram 👻 </a></span>
+                <span class="sl"> <a href="https://www.behance.net/sujithdevannagari"> Follow on Behance 🚶‍♂️</a></span>
+                <span class="sl"> <a href="https://unsplash.com/@sujithdevanagari">Love in Unsplash ❤️</a></span>
+                <span class="sl"> <a href="https://dribbble.com/Sujithdevanagari">Shots on Dribbble 🎊</a></span>
             </div>
         </div>
-        <footer style="padding:0px 0px 20px 0px; color:#cfcfcf; ">&copy; Copyrights Reserved 2020 | <img src="Images/Logo.svg" width="20px" alt="logo"> Sujith Devanagari</footer>
+        <footer style="padding:0px 0px 10px 0px; color:#cfcfcf; ">&copy; Copyrights Reserved 2020 | <img src="images/Logo.svg" width="20px" alt="logo"> Sujith Devanagari</footer>
     </section>
 
 
