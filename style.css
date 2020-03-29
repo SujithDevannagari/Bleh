@@ -66,12 +66,20 @@ body {
     font-size: 2.3em;
     text-decoration: none;
     font-weight: 100;
-    color: darkgray;
-    padding-right: 40px;
+    color: darkgray !important;
+    padding-left: 40px;
 }
 
+.menu1 {
+    font-size: 2.3em;
+    text-decoration: none;
+    font-weight: 100;
+    
+}
+
+
 a {
-    color: var(--primary);
+    color: darkgray;
     text-decoration: none;
 }
 
@@ -98,8 +106,8 @@ a:hover {
 
 .navMenu {
     margin: 0;
-    float: left;
-    margin-left: 18%;
+    float: right;
+    
 }
 
 .sticky {
@@ -213,7 +221,7 @@ iframe {
     border: none;
     margin-left: 1.8em;
     margin-top: 20%;
-    width: 55em;
+    width: 57em;
     height: 35em;
 
 }
