@@ -500,4 +500,23 @@ height: 85vh;
     margin-top:10%;
 }
 
+.sl a{
+    margin-top: 10%;
+    font-size: 1.3em;
+    font-weight: 100;
+    color: var(--primary) !important;
+    text-align: center;
+    padding: 0px 35px;
+    transition: ease-in-out .2s;
+}
+.sl a:hover{
+    margin-top: 10%;
+    font-size: 1.3em;
+    font-weight: 100;
+    color: var(--accent) !important;
+    text-align: center;
+    padding: 0px 35px;
+    transition: ease-in-out .2s;
+}
+
  };
