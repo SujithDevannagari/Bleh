@@ -257,9 +257,9 @@ a:hover {
 iframe {
     border: none;
     margin-left: 1.8em;
-    margin-top: 23%;
-    width: 57vw;
-    height: 63vh;
+    margin-top: 25%;
+    width: 51.5vw;
+    height: 60vh;
 
 }
 
@@ -269,7 +269,7 @@ p {
 
 .con {
     text-align: center;
-    padding-top: 15%;
+    padding-top: 10%;
     margin-bottom: 10%;
 }
 
@@ -463,7 +463,7 @@ z-index: 999;
 
 iframe{
     margin-top: 1%;
-width: 64vw;
+width: 100%;
 height: 85vh;
 }
 .con {
