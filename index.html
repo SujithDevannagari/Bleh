@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="fullpage.css" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.js">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    
     <title>Hello, Peeps!</title>
 </head>
 
@@ -30,25 +30,13 @@
                     impact creating designer.</p>
                 <div>
                     <div class="menu1">
-                        <a  href="#work">
-                            My Work</a>
-
-                        <a  style="padding-left:40px ;" href="#photography">
-                            Photography</a>
-                    </div>
-                    <br>
-                    <div class="menu1" style="margin-top:2%">
-                        <a  href="#">
-                            Contact</a>
-                        <a  href="#" style="margin:11px; padding-left:40px ;">
-                            My CV</a>
-
+                            Scroll for more  <i class="fa fa-angle-down"></i></a>
                     </div>
                 </div>
 
             </section>
             <section class="col-md-6 col-lg-6 col-sm-4" style=" margin: 12% 0 0 0; width: 500px; height: 600px">
-                <img src="Images/mypic.png" width="500px" height="600px" style="-webkit-box-shadow: 10px 10px 0px 2px rgba(220,169,90,1);
+                <img class="js-vhs-filter" src="Images/mypic.png" width="500px" height="600px" style="-webkit-box-shadow: 10px 10px 0px 2px rgba(220,169,90,1);
 -moz-box-shadow: 10px 10px 0px 2px rgba(220,169,90,1);
 box-shadow: 10px 10px 0px 2px rgba(220,169,90,1);" />
             </section>
@@ -62,7 +50,7 @@ box-shadow: 10px 10px 0px 2px rgba(220,169,90,1);" />
                     <img src="Images/Logoname.svg" alt="SD">
                     <!-- <span >Sujith<br>Devanagari</span> -->
                 </a>
-                <div class="navMenu">
+                <div class="navMenu edo">
                     <a class="menuf" href="#work">
                         My Work
                     </a>
@@ -72,7 +60,7 @@ box-shadow: 10px 10px 0px 2px rgba(220,169,90,1);" />
                     <a class="menuf" href="#contact">
                         Contact
                     </a>
-                    <a class="menuf" href="#">
+                    <a class="menuf" href="Devannagari Sujith CV.pdf" target="blank">
                         My CV
                     </a>
 
@@ -104,25 +92,25 @@ box-shadow: 10px 10px 0px 2px rgba(220,169,90,1);" />
     <section class="container">
         <div id="photography" class="row">
             <div class="grid-container">
-                <div class="one">1</div>
-                <div class="two">2</div>
-                <div class="three">3</div>
-                <div class="four">4</div>
-                <div class="five">5</div>
-                <div class="six">6</div>
-                <div class="seven">7</div>
+                <a href="https://unsplash.com/@sujithdevanagari" target="blank" class="one"></a>
+                <div class="two"></div>
+                <div class="three"></div>
+                <div class="four"></div>
+                <div class="five"></div>
+                <div class="six"></div>
             </div>
+            <div style="margin-top:2%;"><a style=" letter-spacing:.3px; font-size: 1em; font-weight: 200;" href="">View more on Unsplash</a> </div>
         </div>
     </section>
     <section id="contact" class="container">
-        <div style="text-align: center;     text-align: center;
-            margin-top: 20px;
-            margin-bottom: 80px;">
-            <span class="last">Hire Me!</span><br>
-            <input type="text" placeholder="Name"><br>
-            <textarea type="textarea" placeholder="Query Here!"></textarea><BR>
-            <button>Submit</button>
-            <div style="margin-top:15%">
+        <div class="con">
+            <div class="last"> Looking for a Freelance Designer?</div><br>
+            
+            <div class="last1" style="margin-top:10%; line-height: 280%;">
+                <div><a href="mailto:sujith.d91@gmail.com?Subject=Freelance%20Enquiry" target="blank"><img src="images/Email.svg" alt="" width="40px"> Email Me</a></div>
+            <div><a href="https://t.me/SujithDesign" target="blank"><img src="images/Telegram.svg" alt="" width="40px"> Let's Chat on Telegram</a></div>
+        </div>
+            <div style="margin-top:20%">
                 <span class="last1"> <a href="#"> Hi on Instagram </a></span>
                 <span class="last1"> <a href="#"> Follow on Behance</a></span>
                 <span class="last1"> <a href="#">Love in Unsplash</a></span>
@@ -135,5 +123,36 @@ box-shadow: 10px 10px 0px 2px rgba(220,169,90,1);" />
 
 </body>
 <script src="one.js"> </script>
+<script>
+    
+var topMenu = $(".edo"),
+    topMenuHeight = topMenu.outerHeight()+15,
+    // All list items
+    menuItems = topMenu.find("a"),
+    // Anchors corresponding to menu items
+    scrollItems = menuItems.map(function(){
+      var item = $($(this).attr("href"));
+      if (item.length) { return item; }
+    });
 
+    $(document).ready(function() {
+    $(document).on("scroll", onScroll);
+
+  function onScroll(event){
+    var scrollPos = $(document).scrollTop();
+    $('.edo a').each(function () {
+        var currLink = $(this);
+        var refElement = $(currLink.attr("href"));
+        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+            $('a').removeClass("active");
+            currLink.addClass("active");
+        }
+        else{
+            currLink.removeClass("active");
+        }
+        });
+    }
+})
+
+</script>
 </html>
