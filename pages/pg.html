@@ -127,6 +127,47 @@
     
 </body>
 <script>
+function go(loc) {
+  document.getElementById('iFr').src = loc;
+}
+
+var topMenu = $(".edo"),
+    topMenuHeight = topMenu.outerHeight()+15,
+    // All list items
+    menuItems = topMenu.find("a"),
+    // Anchors corresponding to menu items
+    scrollItems = menuItems.map(function(){
+      var item = $($(this).attr("href"));
+      if (item.length) { return item; }
+    });
+
+    $(document).ready(function() {
+    $(document).on("scroll", onScroll);
+
+  function onScroll(event){
+    var scrollPos = $(document).scrollTop();
+    $('.edo a').each(function () {
+        var currLink = $(this);
+        var refElement = $(currLink.attr("href"));
+        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+            $('a').removeClass("active");
+            currLink.addClass("active");
+        }
+        else{
+            currLink.removeClass("active");
+        }
+        });
+    }
+})
+
+
+$('.b').on('click', function(){
+  $('.b').removeClass('active');
+  $(this).toggleClass('active');
+})
+
+
+
     var $cont = document.querySelector('.cont');
 var $elsArr = [].slice.call(document.querySelectorAll('.el'));
 var $closeBtnsArr = [].slice.call(document.querySelectorAll('.el__close-btn'));
